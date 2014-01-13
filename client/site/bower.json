@@ -1,0 +1,16 @@
+{
+  "name": "djangular-boilerplate",
+  "version": "0.0.0",
+  "dependencies": {
+    "almond": "~0.2.5",
+    "requirejs": "~2.1.8",
+    "jquery": "~2.0.3",
+    "lodash": "~2.2.1",
+    "angular": "~1.2.0",
+    "angular-ui-router": "~0.2.0",
+    "normalize-less": "*",
+    "angularjs-stellar": "*",
+    "jquery-waypoints": "~2.0.3",
+    "angular-scrollto": "*"
+  }
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" ng-class="htmlClass">
+<head>
+  <title ng-bind="pageTitle"></title>
+
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+
+  <script type="text/javascript">
+    (function() {
+      var config = {
+        kitId: 'byd4jls',
+        scriptTimeout: 5000
+      };
+      var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+    })();
+  </script>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- build:js:release source.min.js -->
+  <script src="vendor/requirejs/require.js" data-main="app/main"></script>
+  <!-- /build -->
+
+  <!-- build:remove:release -->
+  <script src="http://localhost:35729/livereload.js"></script>
+  <!-- /build -->
+</head>
+
+<body>
+
+  <header site-header ng-style="headerPos">
+    <div class="nav-container">
+      <h1><a href="#welcome" id="welcome" scroll-to="0">The Duros</a></h1>
+      <nav>
+        <a  href="/#/our-story" waypoint=".our-story" waypoint-offset="-103"
+            scroll-to=".our-story" scroll-offset="-103">Our Story</a>
+
+        <a  href="/#/bride-groom" waypoint=".bride-groom"  waypoint-offset="-103"
+            scroll-to=".bride-groom" scroll-offset="-103">Bride &amp; Groom</a>
+
+        <a  href="/#/party-people" waypoint=".party-people" waypoint-offset="-103"
+            scroll-to=".party-people" scroll-offset="-103">Party People</a>
+
+        <a  href="/#/rsvp" waypoint=".rsvp" waypoint-offset="-103"
+            scroll-to=".rsvp" scroll-offset="-103">RSVP</a>
+
+        <a  href="/#/location" waypoint=".location" waypoint-offset="-103"
+            scroll-to=".location" scroll-offset="-103">Location</a>
+
+        <a  href="/#/registry" waypoint=".registry" waypoint-offset="-103"
+            scroll-to=".registry" scroll-offset="-103">Registry</a>
+      </nav>
+    </div>
+  </header>
+
+  <div id="main-container">
+
+    <section class="welcome" ng-controller="WelcomeCtrl">
+      <p>Becoming The Duros &#8226; Dreams Come True</p>
+      <span class="down-arrow" ng-cloak ng-style="downArrowStyle">
+        <img src="/assets/img/down_arrow.png" width="100%" height="100%" />
+      </span>
+      <img src="/assets/img/intro.jpg" width="100%" height="100%" />
+    </section>
+
+    <section  class="slideshow" waypoint-clear
+              slideshow="['/assets/img/slideshow_1.jpg',
+                          '/assets/img/slideshow_1.jpg',
+                          '/assets/img/slideshow_1.jpg']">
+        <span class="left-arrow"></span>
+        <span class="right-arrow"></span>
+        <div id="slider" class="swipe">
+          <div class="swipe-wrap"></div>
+        </div>
+    </section>
+
+    <section class="our-story">
+      <h2>Our Story</h2>
+      <p>Two lovers on a collision course. That best describes Torie and Adam's meeting. Never has their been two people more perfectly matched for each other. Each have led challenging, interesting, and vibrant lives before they met, and when these two lives finally came toghether, it was nothing short of meant to be.</p>
+      <p>Both artists, both romantics, both passionate, and both beautiful and bright spirits. With all their many similarities, this beautiful union could not be as stong as it is without their individuality and passion for what makes them happy. Torie grew up on the Westside of LA, while Adam grew up in the nature of Sedona, AZ. Two seperate paths, ultimately heading for one.</p>
+      <p>On a Los Angeles night, like any other, Torie sat with friends. From across the room, she sees a man with blue eyes. As he stands to make an announcement, things around her get quiet, an energy puls her attention towards him, and she thinks to herself, "I want to know him."</p>
+      <p>Day, weeks, months pass. The two lover's paths cross, and with each meeting they discover more and more how drawn togehter they are. Then one day, out of the blue, he asks her for coffee. Something she never thought would happen, something he knew was what he had always wanted to do.</p>
+      <p>From that day on, they could not deny that the other was the person they had always dreamed of walking through life with. Their love, commitment, and joy inspires their own life, and the lives of those around them</p>
+      <p>Two years later, on a beautiful Friday in September, the two lovers spend the day together laughing, shopping, and taking in their favorite passtime, spending quality time with each other. After a lovely dinner, they walk hand in hand to the Santa Monica pier, where they had their first date. After a stroll, Adam turns to Torie and asks her to board the Ferris Wheel with him. After some hesitation, heights not being her favorite, Torie agrees. She does not regret pushing past her fear, as at the top of the wheel, he bends to one knee, reaches into his pocket, and those words she had always hoped would come leave his lips... "Will you marry me?"</p>
+    </section>
+
+    <section class="quote">
+      <dl>
+        <dt>Myths are public dreams &#8226; Dreams are private myths</dt>
+        <dd>- Joseph Capbell</dd>
+      </dl>
+      <img src="/assets/img/quote.jpg" width="100%" height="100%" />
+    </section>
+
+    <section class="bride-groom">
+
+      <ul>
+        <li class="bride"><a href="/#/bride" ng-click="bridePanel = 'open'">Bride</a></li>
+        <li class="groom"><a href="/#/groom" ng-click="groomPanel = 'open'">Groom</a></li>
+      </ul>
+
+      <div class="panel bride animate-show" ng-cloak ng-show="bridePanel === 'open'" ng-click="bridePanel = 'closed'">
+        <span class="close"></span>
+        <div class="copy">
+          <h3>Torie</h3>
+          <p>Conventional meets unconventional. Rock and Roll meets Ballet, with a whole lot of Belly Dance thrown in. Her quest for love always seemed to come up with too much of one, and not enough of the other. Then one fateful day, when it seemed as if she would never find her balance, a pair of bright blue eyes showed up and showed her it's never too late, and it was worth the wait.</p>
+          <p class="meet"><a href="/#/groom" ng-click="bridePanel = 'closed'; groomPanel = 'open'">Meet the Groom</a></p>
+        </div>
+      </div>
+
+      <div class="panel groom animate-show" ng-cloak ng-show="groomPanel === 'open'" ng-click="groomPanel = 'closed'">
+        <span class="close"></span>
+        <div class="copy">
+          <h3>Adam</h3>
+          <p>Romantic out of the gate. From about 10 years old on, he knew he wanted a partner by his side, and he didn't hesitate to start looking. Along the way, life has taught him many valuable lessons, and presented him many different paths. With each success and each failure, life brought him closer to the day he met Torie. That day will forever remain the day that something missing from his life... was found.</p>
+          <p class="meet"><a href="/#/bride" ng-click="bridePanel = 'open'; groomPanel = 'closed'">Meet the Bride</a></p>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="party-people">
+
+    </section>
+
+    <section class="rsvp">
+
+    </section>
+
+    <section class="location">
+
+    </section>
+
+    <section class="registry">
+
+    </section>
+
+  </div>
+
+</body>
+
+</html>
